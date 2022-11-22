@@ -229,3 +229,7 @@ body {
 .bottom {
   padding-bottom: 12vw;
 }
+
+@media screen (min-width 768px) {
+  
+}
