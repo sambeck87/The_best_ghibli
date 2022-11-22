@@ -33,20 +33,20 @@ body {
 
 #subtitle {
   color: var(--color2);
-  font-weight:300;
+  font-weight: 300;
   font-size: 5vw;
   margin: 8vw 0 0 4vw;
 }
 
-#title{
+#title {
   background: url('../Imagenes/font.png');
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 10vw;
   line-height: 10vw;
-  width:fit-content;
+  width: fit-content;
   margin: 0 0 0 4vw;
 }
 
@@ -73,7 +73,6 @@ body {
   color: white;
 }
 
-
 #program_subtitle {
   display: flex;
   flex-direction: column;
@@ -84,7 +83,7 @@ body {
 #program_subtitle h2 {
   text-align: center;
   margin: 10vw 0 1vw 0;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .divisor {
@@ -129,7 +128,7 @@ body {
   width: 76vw;
   height: 15vw;
   margin: 4vw 8vw 6vw 12vw;
-  color:white;
+  color: white;
   font-size: 5vw;
   border: none;
 }
@@ -178,7 +177,6 @@ body {
   width: 25vw;
   top: 4vw;
   left: 4vw;
-
 }
 
 .ornato {
@@ -187,7 +185,7 @@ body {
   z-index: -1;
 }
 
-.text_speaker_box{
+.text_speaker_box {
   grid-column: 2;
   margin-left: 3vw;
 }
