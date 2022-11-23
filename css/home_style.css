@@ -326,6 +326,7 @@ body {
 .speakers_box {
   display: grid;
   grid-template-columns: 30% 70%;
+  column-gap: 3.5vw;
 }
 
 .picture_box {
@@ -648,6 +649,7 @@ footer,
 
   .speakers_box {
     grid-template-columns: 30% 70%;
+    column-gap: 0;
   }
 
   .picture_box {
