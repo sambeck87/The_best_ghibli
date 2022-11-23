@@ -15,10 +15,35 @@
 </head>
 
 <body>
+  <nav id="menu" class="hide">
+    <div id="social_box">
+      <ul id="social_list">
+      <li><a href="https://www.facebook.com/"><img class="media_icons" src="./Imagenes/facebook_icon.png" alt="facebook"></a></li>
+      <li><a href="https://twitter.com/"><img class="media_icons" src="./Imagenes/twiter_icon.png" alt="twiter"></a></li>
+      <li><a href="#">English</a></li>
+      <li><a href="#">My Page</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+    </div>
+    <div id="nav_box">
+      <button id="close" type="button">X</button>
+      <img src="./Imagenes/logo_menu.png" alt="logo">
+      <ul id="nav_list">
+        <li><a href="./about.html">About</a></li>
+        <li><a id="program_link" href="#program">Program</a></li>
+        <li><a id="join_link" href="#join_button">Join</a></li>
+        <li class="sponsor"><a href="./about.html#partner">Sponsor</a></li>
+        <li class="sponsor_desk"><a href="#partner">Sponsor</a></li>
+        <li><a href="./about.html#past_events">News</a></li>
+      </ul>
+      <button type="button" id="campaing">Ghibli Campaign</button>
+    </div>
+  </nav>
+
   <section id="home">
-    <button type="menu" class="btn_menu"><img class="img_menu" src="./Imagenes/button.png" alt="menu"></button>
+    <button id="menu_button" type="menu" class="btn_menu"><img class="img_menu" src="./Imagenes/button.png" alt="menu"></button>
     <h2 id="subtitle">"It's like we're in the sky!"</h2>
-    <h1 id="title">The best of ghibli studio 2023</h1>
+    <h1 id="title">THE BEST OF GHIBLI STUDIO 2023</h1>
     <p id="text1">If you want to feel close to the wonderful creations of Studio Ghibli, you can't miss this event. We will celebrate their 38th anniversary by screening 6 of their best creations this October 14 and 15, Mexico City.</p>
     <p id="date">2023.10.14(SAT) ~ 15(SUN)</p>
     <p id="inc">@National Museum of Art, Mexico City, UNAM and more</p>
@@ -30,7 +55,7 @@
       <hr class="divisor">
     </div>
 
-    <div>
+    <div id="program_container">
       <div class="program_box">
         <div class="item_box">
           <img class="icons" src="./Imagenes/drawing.png" alt="drawing">
@@ -99,17 +124,19 @@
       </div>
     </div>
 
-    <button id="join_button">Join Ghibli event 2023</button>
+    <button type="button" id="join_button">Join Ghibli event 2023</button>
+
+    <a id="whole_program" href="">SEE THE WHOLE PROGRAM</a>
   </section>
 
-  <section class="speakers">
+  <section id="speakers_section" class="speakers">
     <div id="feature_speakers">
-      <h2 id="speakers_subtitle">Featured speakers</h2>
+      <h2 id="speakers_subtitle">Featured Speakers</h2>
       <hr class="divisor">
     </div>
 
     <div id="speakers_cotainer">
-      <div class="speakers_box">
+      <div class="speakers_box speak1">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/takahata_.png" alt="Isao Takahata">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -122,7 +149,7 @@
         </div>
       </div>
 
-      <div class="speakers_box">
+      <div class="speakers_box speak2">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/Hayao_Miyazaki.png" alt="Hayao Miyazaki">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -135,7 +162,7 @@
         </div>
       </div>
 
-      <div class="speakers_box">
+      <div class="speakers_box speak3">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/a.png" alt="Cristina Hernández">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -149,7 +176,7 @@
         </div>
       </div>
 
-      <div class="speakers_box">
+      <div class="speakers_box speak4">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/Toshio_Suzuk_.png" alt="Toshio Suzuk">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -162,7 +189,7 @@
         </div>
       </div>
 
-      <div class="speakers_box">
+      <div class="speakers_box speak5">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/Mitsuki.png" alt="Mitsuki Nakamura">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -175,7 +202,7 @@
         </div>
       </div>
 
-      <div class="speakers_box">
+      <div class="speakers_box speak6">
         <div class="picture_box">
           <img class="picture" src="./Imagenes/Joe_Hisaishi.png" alt="Joe Hisaishi">
           <img class="ornato" src="./Imagenes/cuadros.jpg" alt="ornament">
@@ -191,8 +218,29 @@
     </div>
   </section>
   <div class="bottom">
-    <button id="more_button">MORE<img id="down_button" src="./Imagenes/down.png" alt="more_button"></button>
+    <button type="button" id="more_button"><p id="text_more">MORE</p><p id="text_less" class="hide">LESS</p><img id="down_button" src="./Imagenes/down.png" alt="more_button"></button>
   </div>
+
+  <section id="partner">
+    <h2>Partner</h2>
+    <hr class="divisor">
+    <div class="logos">
+      <img class="partnes_width" src="./Imagenes/bellas_artes.png" alt="logo_art_museum">
+      <img class="partnes_width" src="./Imagenes/segob.png" alt="logo_segob">
+      <img class="partnes_width unam" src="./Imagenes/unam.png" alt="logo_unam">
+      <img class="partnes_width" src="./Imagenes/cdmx.png" alt="logo_vdmx">
+      <img class="partnes_width" src="./Imagenes/arte_pop.png" alt="logo_pop">
+    </div>
+  </section>
+
+  <footer>
+    <img src="./Imagenes/ghibli_logo.png" alt="ghibli_logo">
+    <div id="footer_text">
+      <p id="rights"> 2023 Ghibli Studios. Some Rights Reserved</p>
+      <p id="japan">このページの内容はフィクションであり、ジブリに関する出来事はありません。このページの目的は、単に教育です。</p>
+    </div>
+  </footer>
+  <script src="./scripts/interactions.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,156 @@ body {
   font-weight: 400;
 }
 
+.hide {
+  display: none;
+}
+
+#menu {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(211, 211, 211, 0.7);
+  position: fixed;
+  backdrop-filter: blur(5px);
+}
+
+#close {
+  width: 8vw;
+  height: 8vw;
+  font-size: 6vw;
+  color: #272a31;
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+  margin: 3vw 3vw 0 0;
+}
+
+#mini_menu {
+  display: none;
+}
+
+#social_box {
+  background-color: var(--color1);
+  height: 10vw;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#social_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+#nav_list li,
+#social_list li {
+  list-style: none;
+}
+
+#social_list li a:link,
+#social_list li a:active,
+#social_list li a:visited {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vw;
+}
+
+#social_list li a:hover {
+  background-color: #ec6242;
+}
+
+#nav_list li a:hover {
+  margin-left: 4vw;
+}
+
+.media_icons {
+  width: 2.7vw;
+}
+
+#nav_box {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+
+#close:hover {
+  font-size: 7.5vw;
+}
+
+footer img,
+footer p {
+  width: 40%;
+  margin: 8vw 0 0 0;
+  font-size: 2.5vw;
+  line-height: 4vw;
+}
+
+#nav_box img {
+  width: 20vw;
+  height: 20vw;
+  align-self: center;
+  margin: 0 0 8vw 0;
+}
+
+#nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 35vw;
+  height: 70vw;
+  padding: 0;
+  margin: 1vw 0 8vw 8vw;
+}
+
+.sponsor_desktop {
+  display: none;
+}
+
+#nav_list li a:link,
+#nav_list li a:active,
+#nav_list li a:visited {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 7vw;
+  margin-bottom: 3vw;
+}
+
+#campaing {
+  align-self: center;
+  color: white;
+  background-color: var(--color2);
+  font-size: 6vw;
+  padding: 3vw 2vw 3vw 2vw;
+}
+
+#campaing:hover {
+  background-color: #ec6242;
+  font-weight: 600;
+  border: none;
+}
+
 #about {
   background-color: rgb(245, 245, 245);
   display: flex;
@@ -70,6 +220,10 @@ body {
   font-weight: 600;
 }
 
+#mail:hover {
+  color: var(--color2);
+}
+
 #logo {
   display: flex;
   flex-direction: column;
@@ -83,7 +237,7 @@ body {
   width: 45vw;
   font-size: 4vw;
   font-weight: 600;
-  margin-top: 7vw;
+  margin: 7vw 0 1vw 0;
   color: var(--color1);
 }
 
@@ -93,6 +247,10 @@ body {
   font-size: 2.7vw;
   line-height: 3.7vw;
   margin-bottom: 8vw;
+}
+
+#text_logo_desk {
+  display: none;
 }
 
 #logo_container {
@@ -136,12 +294,6 @@ body {
   line-height: 4vw;
 }
 
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-
 #event1 {
   background-image: url("../Imagenes/evento1.jpg");
   background-size: contain;
@@ -160,17 +312,18 @@ a:active {
   align-items: center;
 }
 
+.text_event:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: var(--color2);
+}
+
+.img_menu:hover {
+  width: 9vw;
+}
+
 .text_event h3 {
   font-size: 8vw;
   margin: 0;
-}
-
-footer img,
-footer p {
-  width: 40%;
-  margin: 8vw 0 0 0;
-  font-size: 2.5vw;
-  line-height: 4vw;
 }
 
 .text_event p {
@@ -235,4 +388,296 @@ footer {
   justify-content: space-around;
   padding-bottom: 8vw;
   align-items: center;
+}
+
+#footer_desk {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    height: 100%;
+    position: relative;
+    background-color: white;
+    display: block;
+  }
+
+  #mini_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+  }
+
+  #mini_menu a {
+    font-size: 1.5vw;
+    color: var(--color1);
+  }
+
+  #mini_menu a:link,
+  #mini_menu a::after {
+    text-decoration: none;
+    color: var(--color1);
+  }
+
+  .mini_icons {
+    width: 1.6vw;
+  }
+
+  .btn_menu,
+  #menu_button,
+  #close {
+    display: none;
+  }
+
+  #social_box {
+    background-color: var(--color1);
+    height: 2.4vw;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #social_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-right: 20vw;
+  }
+
+  #nav_list li,
+  #social_list li {
+    list-style: none;
+  }
+
+  #social_list li a:link,
+  #social_list li a:active,
+  #social_list li a:visited {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+  }
+
+  .media_icons {
+    width: 1.3vw;
+  }
+
+  #nav_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vw;
+  }
+
+  #nav_box * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav_box img {
+    width: 5vw;
+    margin: 0 0 0 15vw;
+    height: 5vw;
+  }
+
+  .sponsor {
+    display: none;
+  }
+
+  .sponsor_desktop {
+    display: block;
+  }
+
+  #nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    height: 6vw;
+    padding: 0;
+    margin: 0 0 0 8vw;
+  }
+
+  #nav_list li a:link,
+  #nav_list li a:active,
+  #nav_list li a:visited {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 1.2vw;
+    margin: 0;
+  }
+
+  #nav_list li a:hover {
+    color: #ec6242;
+    font-weight: 600;
+  }
+
+  #campaing {
+    border: solid 3px var(--color2);
+    color: var(--color2);
+    background-color: transparent;
+    font-size: 1vw;
+    margin-right: 15vw;
+    height: 3.5vw;
+    padding: 0 0.5vw 0 0.5vw;
+  }
+
+  #about {
+    padding: 0 0 8vw 0;
+  }
+
+  #about h2 {
+    display: none;
+  }
+
+  #about h1 {
+    font-size: 4vw;
+    width: 50vw;
+    margin: 4vw 0 0 0;
+  }
+
+  #about_event {
+    margin: 6vw 0 0 0;
+    width: 60%;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    padding: 1vw 5vw 1vw 5vw;
+  }
+
+  #contact {
+    font-size: 1.2vw;
+    line-height: 2vw;
+    margin-top: 4vw;
+  }
+
+  #logo {
+    padding-bottom: 6vw;
+  }
+
+  #title_logo {
+    font-size: 2.8vw;
+    color: var(--color1);
+    margin-bottom: 0;
+  }
+
+  .divisor_desk {
+    width: 2vw;
+    margin: 1.5vw 0 1vw 0;
+  }
+
+  #text_logo {
+    display: none;
+  }
+
+  #text_logo_desk {
+    font-size: 1.2vw;
+    display: block;
+    text-align: center;
+    width: 65%;
+    line-height: 2vw;
+    margin: 0 0 5vw 0;
+  }
+
+  #logo_container {
+    width: 50%;
+  }
+
+  #logo_image {
+    width: 14vw;
+  }
+
+  #past_events {
+    margin-bottom: 5vw;
+  }
+
+  #past_title {
+    font-size: 2.8vw;
+    margin: 6vw 0 0 0;
+  }
+
+  #past_text {
+    font-size: 1.2vw;
+    margin: 0 0 6vw 0;
+  }
+
+  #event_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #tokio_event,
+  #argentina_event {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #event1,
+  #event2 {
+    width: 95%;
+    height: 22vw;
+  }
+
+  .text_event h3 {
+    font-size: 3vw;
+  }
+
+  .text_event p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    width: 35vw;
+    text-align: center;
+  }
+
+  #footer_mobile,
+  #partner {
+    display: none;
+  }
+
+  #footer_desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    color: white;
+    padding: 6vw 0 6vw 0;
+  }
+
+  #footer_desk img {
+    width: 20vw;
+    margin: 0;
+  }
+
+  #footer_text {
+    width: 45vw;
+    margin-left: 3vw;
+  }
+
+  #rights,
+  #japan {
+    width: 100%;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    margin: 0;
+  }
+
+  #rights {
+    margin-bottom: 1vw;
+  }
 }

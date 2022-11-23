@@ -15,14 +15,43 @@
 </head>
 
 <body>
+  <nav id="menu" class="hide">
+    <div id="social_box">
+      <ul id="social_list">
+      <li><a href="https://www.facebook.com/"><img class="media_icons" src="./Imagenes/facebook_icon.png" alt="facebook"></a></li>
+      <li><a href="https://twitter.com/"><img class="media_icons" src="./Imagenes/twiter_icon.png" alt="twiter"></a></li>
+      <li><a href="#">English</a></li>
+      <li><a href="#">My Page</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+    </div>
+    <div id="nav_box">
+      <button id="close" type="button">X</button>
+      <img src="./Imagenes/logo_menu.png" alt="logo">
+      <ul id="nav_list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#program">Program</a></li>
+        <li><a href="./index.html#join_button">Join</a></li>
+        <li class="sponsor"><a id="sponsor" href="#partner">Sponsor</a></li>
+        <li class="sponsor_desktop"><a href="./index.html#partner">Sponsor</a></li>
+        <li><a id="news" href="#past_events">News</a></li>
+      </ul>
+      <button type="button" id="campaing">Ghibli Campaign</button>
+    </div>
+  </nav>
+
   <section id="about">
     <button type="menu" class="btn_menu"><img class="img_menu" src="./Imagenes/button.png" alt="menu"></button>
+    <div id="mini_menu">
+      <a href="./index.html"><img class="mini_icons" src="./Imagenes/home.svg" alt="home_icon"></a>
+      <img class="mini_icons" src="./Imagenes/right_arrow.png" alt="arrow">
+      <a href="http://www.munal.mx/en">Museum</a>
+      <img class="mini_icons" src="./Imagenes/right_arrow.png" alt="arrow">
+      <a href="https://ghiblicollection.com/">Ghibli</a>
+    </div>
     <h2 id="subtitle">"It's like we're in the sky!"</h2>
-    <h1 id="title">The best of ghibli studio 2023</h1>
-    <p id="about_event">"The Best of Studio Ghibli" event is the perfect opportunity to learn more about the history and
-      work behind our favorite animations. This year, as in previous years, we're bringing experts and members of the
-      staff who made possible the making of films so epic that they are considered cult films. We will also be joined by
-      the founders of Ghibli, who will be happy to answer all your questions..</p>
+    <h1 id="title">THE BEST OF GHIBLI STUDIO 2023</h1>
+    <p id="about_event">"The Best of Studio Ghibli" event is the perfect opportunity to learn more about the history and work behind our favorite animations. This year, as in previous years, we're bringing experts and members of the staff who made possible the making of films so epic that they are considered cult films. We will also be joined by the founders of Ghibli, who will be happy to answer all your questions..</p>
     <p id="contact">Please contact us Per Email for any further cuestions about The Best of Studio Ghibli event
       2023<br><a id="mail" href="sandro_mipb@hotmail.com">thebestofghibli@thisisnotreal.com</a>
     </p>
@@ -30,7 +59,9 @@
 
   <section id="logo">
     <h2 id="title_logo">The best of Ghibli studio 2023 logo</h2>
-    <p id="text_logo">The logo of "The best of Ghibli studio 2023" was decided through the logo competition from 4, April to 3, May</p>
+    <hr class="divisor divisor_desk">
+    <p id="text_logo">The logo of "The best of Ghibli studio 2023" was decided through the logo competition from 4, April to 3, May.</p>
+    <p id="text_logo_desk">The logo of "The best of Ghibli studio 2023" was decided through the logo competition from 4, April to 3, May. <br> After online public voting and Selection Committee's judging process, the logo from Amayrani Hernandez won the prize. <br> After consultation with Isao Takahata we optimized the prize-winning-logo for this year's summits as following:</p>
     <div id="logo_container">
       <img id="logo_image" src="./Imagenes/logo.png" alt="logo">
     </div>
@@ -38,9 +69,10 @@
 
   <section id="past_events">
     <h2 id="past_title">See the past Ghibli events</h2>
-    <hr class="divisor">
+    <hr class="divisor divisor_desk">
     <p id="past_text">Take a look at the last Ghibli events which took place in Tokio, Japon and Buenos Aires, Argetina</p>
-    <div>
+    <div id="event_container">
+    <div id="tokio_event">
       <div id="event1">
         <a href="#">
           <div class="text_event">
@@ -51,16 +83,17 @@
       </div>
     </div>
 
-    <div>
+    <div id="argentina_event">
       <div id="event2">
         <a href="#">
           <div class="text_event">
-            <h3>2022</h3>
+            <h3>2021</h3>
             <p>The best of Ghibli 2022 in Tokio</p>
           </div>
         </a>
       </div>
     </div>
+  </div>
   </section>
 
   <section id="partner">
@@ -77,10 +110,19 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="footer_desk">
+    <img src="./Imagenes/ghibli_logo_desk.png" alt="ghibli_logo">
+    <div id="footer_text">
+      <p id="rights"> 2023 Ghibli Studios. Some Rights Reserved</p>
+      <p id="japan">このページの内容はフィクションであり、ジブリに関する出来事はありません。このページの目的は、単に教育です。</p>
+    </div>
+  </footer>
+
+  <footer id="footer_mobile">
     <img class="footer_image" src="./Imagenes/museo_nacioal.png" alt="Logo_museum">
     <p>2023 Museum of Art, Mexico City<br>Some Rights Reserved</p>
   </footer>
+  <script src="./scripts/interactions_about.js"></script>
 </body>
 
 </html>
