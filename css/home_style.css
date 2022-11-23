@@ -147,7 +147,7 @@ body {
   background-color: #ec6242;
   font-weight: 600;
   border: none;
-  color:#272a31
+  color: #272a31;
 }
 
 #home {
@@ -725,6 +725,7 @@ footer,
   }
 
   #partner h2 {
+    font-size: 2.5vw;
     color: white;
     font-weight: 300;
     text-align: center;
@@ -770,5 +771,9 @@ footer,
   #japan {
     font-size: 1vw;
     margin-top: 0.5vw;
+  }
+
+  .divisor_desk {
+    width: 2vw;
   }
 }
