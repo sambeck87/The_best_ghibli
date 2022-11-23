@@ -147,6 +147,7 @@ body {
   background-color: #ec6242;
   font-weight: 600;
   border: none;
+  color:#272a31
 }
 
 #home {
@@ -230,7 +231,7 @@ body {
 
 .divisor {
   width: 10%;
-  color: var(--color2);
+  color: #ec5242;
   margin-bottom: 5vw;
 }
 
