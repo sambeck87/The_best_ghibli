@@ -151,10 +151,9 @@ body {
 }
 
 #home {
-  background-image: url("../Imagenes/fondo_1.png");
+  background-image: url("../Imagenes/fondo_gris.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(211, 211, 211, 0.5);
   padding-bottom: 16vw;
 }
 
@@ -197,6 +196,7 @@ body {
   margin: 35px 12vw 15px 6vw;
   font-size: 3vw;
   line-height: 6vw;
+  background-color: rgb(212, 210, 210);
 }
 
 #date {
@@ -212,7 +212,7 @@ body {
 }
 
 #program {
-  background-color: var(--color1);
+  background-image: url('../Imagenes/fondo_negro.jpg');
   color: white;
 }
 
@@ -240,7 +240,7 @@ body {
   grid-template-columns: 20% 30% 50%;
   margin: 2vw 4vw 1vw 4vw;
   gap: 0;
-  background-color: rgb(255, 255, 255, 0.05);
+  background-color: rgb(255, 255, 255, 0.1);
 }
 
 .item_box {
@@ -554,7 +554,7 @@ footer,
     line-height: 2vw;
     margin: 3vw 0 1.5vw 18vw;
     width: 50vw;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(212, 210, 210);
   }
 
   #date {
