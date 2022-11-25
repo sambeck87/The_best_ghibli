@@ -243,6 +243,10 @@ body {
   background-color: rgb(255, 255, 255, 0.1);
 }
 
+.program_box:hover {
+  box-shadow: 0 0 15px #ec6242;
+}
+
 .item_box {
   display: flex;
   flex-direction: row;
@@ -599,10 +603,6 @@ footer,
     align-items: center;
     margin: 0 0.5vw 0 0;
     width: 30vw;
-  }
-
-  .program_box:hover {
-    box-shadow: 0 0 15px #ec6242;
   }
 
   .icons {
