@@ -243,6 +243,10 @@ body {
   background-color: rgb(255, 255, 255, 0.1);
 }
 
+.program_box:hover {
+  box-shadow: 0 0 15px #ec6242;
+}
+
 .item_box {
   display: flex;
   flex-direction: row;
