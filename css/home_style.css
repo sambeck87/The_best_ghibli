@@ -601,6 +601,10 @@ footer,
     width: 30vw;
   }
 
+  .program_box:hover {
+    box-shadow: 0 0 15px #ec6242;
+  }
+
   .icons {
     width: 5vw;
     min-height: 5vw;
